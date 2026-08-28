@@ -11,13 +11,13 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-primary-dark: var(--primary-dark);
-  --color-muted: var(--muted);
-  --color-border: var(--border);
-  --color-section-alt: var(--section-alt);
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --color-primary: #4b49e7;
+  --color-primary-dark: #3a38c9;
+  --color-muted: #6b7280;
+  --color-border: #e5e7eb;
+  --color-section-alt: #f9fafb;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -30,4 +30,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .offer-panel-left {
+    clip-path: polygon(0 0, 100% 6%, 100% 94%, 0 100%);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .offer-panel-right {
+    clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 94%);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
