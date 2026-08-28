@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site-config";
 
 function ProfilePlaceholder() {
   return (
-    <div className="flex h-full w-full items-center justify-center bg-section-alt text-muted">
+    <div className="flex h-full w-full items-center justify-center bg-slate-900 text-slate-500">
       <svg
         className="h-16 w-16"
         viewBox="0 0 24 24"
@@ -27,10 +27,10 @@ function ProfilePlaceholder() {
 
 function LeaderAvatar({ slug, name }: { slug: string; name: string }) {
   const [hasError, setHasError] = useState(false);
-  const imagePath = `/images/leaders/${slug}.jpg`;
+  const imagePath = `/images/leaders/${slug}.webp`;
 
   return (
-    <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-2xl border border-border bg-white shadow-sm">
+    <div className="relative mx-auto h-40 w-40 overflow-hidden rounded-2xl border border-border bg-navy-card shadow-xl">
       {hasError ? (
         <ProfilePlaceholder />
       ) : (
@@ -48,20 +48,20 @@ function LeaderAvatar({ slug, name }: { slug: string; name: string }) {
 
 export function Leaders() {
   return (
-    <section id="leaders" className="bg-section-alt py-20">
+    <section id="leaders" className="bg-section-alt py-20 border-b border-border/50">
       <div className="mx-auto max-w-6xl px-6">
-        <h2 className="text-center text-3xl font-bold text-foreground">
+        <h2 className="text-center text-3xl font-bold text-white">
           Our Leaders
         </h2>
         <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {siteConfig.leaders.map((leader) => (
             <article key={leader.slug} className="text-center">
               <LeaderAvatar slug={leader.slug} name={leader.name} />
-              <h3 className="mt-4 text-xl font-semibold capitalize text-foreground">
+              <h3 className="mt-4 text-xl font-semibold capitalize text-white">
                 {leader.name}
               </h3>
-              <p className="mt-1 capitalize text-primary">{leader.title}</p>
-              <p className="mt-2 text-sm text-muted">{leader.experience}</p>
+              <p className="mt-1 font-medium capitalize text-blue-400">{leader.title}</p>
+              <p className="mt-2 text-sm text-slate-400">{leader.experience}</p>
             </article>
           ))}
         </div>

@@ -1,19 +1,20 @@
 export const siteConfig = {
   name: "Sparkbyte Technologies",
-  legalName: "Spark byte technologies Pvt.ltd",
+  legalName: "Sparkbyte Technologies Pvt.ltd",
   tagline:
-    "We are sparkbyte technologies. globally trusted vad and reseller.",
+    "We are Sparkbyte Technologies. Globally trusted System Integrator and Reseller.",
   description:
-    "Sparkbyte Technologies is an authorised reseller and system integrator, helping businesses secure, protect, and manage their IT infrastructure through industry-leading software solutions.",
+    "Authorised Reseller and System Integrator helping businesses secure, protect, and manage IT infrastructure through leading software, hardware, and cloud solutions.",
   contact: {
     email: "info@sparkbyte-tech.com",
-    phones: ["+91 45678765432", "+1-09876556321"],
+    phones: ["+91 63631 17882", "+91 91879 13773"],
+    mapsUrl: "https://maps.app.goo.gl/3NwDFHGboJm1N5Bw9",
     address: {
       line1: "Sparkbyte Technologies Pvt. Ltd.",
-      line2: "42, MG Road, Indiranagar",
+      line2: "Cabin No. 9, 4 th floor , Golden Square , Eden Park, 102, 20, Vittal Mallya Rd.",
       city: "Bengaluru",
       state: "Karnataka",
-      postalCode: "560038",
+      postalCode: "560001",
       country: "India",
     },
   },
@@ -38,22 +39,22 @@ export const siteConfig = {
   ],
   leaders: [
     {
-      slug: "shaik",
-      name: "shaik",
-      title: "director and ceo",
+      slug: "Shaik",
+      name: "Shaik",
+      title: "CEO and MD",
       experience: "15+ yrs exp",
     },
     {
-      slug: "sagar",
+      slug: "Sagar",
       name: "Sagar",
-      title: "sales director",
+      title: "Sales Director",
       experience: "15+yrs exp",
     },
     {
-      slug: "sophie",
-      name: "sophie",
-      title: "human resources",
-      experience: "6+ yrs exp in human resources",
+      slug: "Sophia",
+      name: "Sophia",
+      title: "Business Development Manager",
+      experience: "Experience in Business Development",
     },
   ],
 } as const;
@@ -65,6 +66,8 @@ export function getFormattedAddress() {
 }
 
 export function getGoogleMapsEmbedUrl() {
-  const query = encodeURIComponent(getFormattedAddress());
-  return `https://maps.google.com/maps?q=${query}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+  const query = encodeURIComponent(
+    "Golden Square - Vittal Mallya Road, 102, 20, Vittal Mallya Rd, Bengaluru, Karnataka 560001",
+  );
+  return `https://maps.google.com/maps?q=${query}&t=&z=16&ie=UTF8&iwloc=&output=embed`;
 }

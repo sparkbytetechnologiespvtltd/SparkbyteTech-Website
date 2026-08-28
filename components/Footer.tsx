@@ -23,7 +23,7 @@ function SocialIcon({ label, href }: { label: string; href: string }) {
       target="_blank"
       rel="noopener noreferrer"
       aria-label={label}
-      className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-primary hover:text-primary"
+      className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-slate-400 transition-colors hover:border-blue-400 hover:bg-blue-950/40 hover:text-blue-400"
     >
       <svg className="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
         <path d={path} />
@@ -36,10 +36,10 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border bg-white">
+    <footer className="border-t border-border/80 bg-navy text-slate-100">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 md:grid-cols-2">
         <div>
-          <p className="text-lg font-semibold">{siteConfig.legalName}</p>
+          <p className="text-lg font-semibold text-white">{siteConfig.legalName}</p>
           <div className="mt-4 flex gap-3">
             <SocialIcon label="Facebook" href={siteConfig.social.facebook} />
             <SocialIcon label="LinkedIn" href={siteConfig.social.linkedin} />
@@ -48,7 +48,7 @@ export function Footer() {
           </div>
         </div>
         <div>
-          <p className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted">
+          <p className="mb-3 text-xs font-bold uppercase tracking-wider text-blue-400">
             Corporate
           </p>
           <ul className="space-y-2">
@@ -56,7 +56,7 @@ export function Footer() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className="text-sm text-foreground transition-colors hover:text-primary"
+                  className="text-sm text-slate-300 transition-colors hover:text-white"
                 >
                   {link.label}
                 </Link>
@@ -65,7 +65,7 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <div className="border-t border-border px-6 py-4 text-center text-xs text-muted">
+      <div className="border-t border-border/60 px-6 py-4 text-center text-xs text-slate-400">
         Copyright © {year} Sparkbyte Technologies. All rights reserved. Terms
         of use · Cookie Options
       </div>

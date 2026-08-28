@@ -1,4 +1,5 @@
 import { ContactUs } from "@/components/ContactUs";
+import { Distributors } from "@/components/Distributors";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -14,10 +15,11 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <WhatWeDo />
+        <Leaders />
         <OEMs />
         <ContactUs />
-        <Leaders />
         <EnquiryForm />
+        <Distributors />
       </main>
       <Footer />
     </>

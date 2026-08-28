@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Globally trusted VAD and reseller — authorised reseller and system integrator for IT security and infrastructure solutions.",
   icons: {
-    icon: "/logos/sparkbyte-icon.png",
+    icon: "/logos/sparkbyte-icon.webp",
   },
 };
 

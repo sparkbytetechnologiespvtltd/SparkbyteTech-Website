@@ -58,13 +58,13 @@ export function EnquiryForm() {
   }
 
   const inputClass =
-    "w-full rounded-xl border border-border bg-white px-4 py-3 text-sm outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20";
+    "w-full rounded-xl border border-border bg-navy-card px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 outline-none transition-all focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 shadow-sm";
 
   return (
-    <section id="enquiry" className="bg-white py-20">
+    <section id="enquiry" className="bg-background py-20">
       <div className="mx-auto max-w-3xl px-6">
-        <h2 className="text-center text-3xl font-bold text-foreground">
-          For More Enquiry
+        <h2 className="text-center text-3xl font-bold text-white">
+          Reach Us
         </h2>
         <form onSubmit={handleSubmit} className="mt-10 space-y-5">
           <div className="grid gap-5 sm:grid-cols-5">
@@ -140,20 +140,20 @@ export function EnquiryForm() {
             <button
               type="submit"
               disabled={formState === "loading"}
-              className="rounded-full border-2 border-red-500 px-10 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-red-50 disabled:cursor-not-allowed disabled:opacity-60"
+              className="rounded-full bg-blue-600 px-10 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/30 transition-colors hover:bg-blue-500 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {formState === "loading" ? "Submitting..." : "Submit"}
             </button>
             {formState === "success" && (
-              <p className="text-sm text-green-600">
+              <p className="text-sm font-medium text-emerald-400">
                 Thank you! Your enquiry has been submitted.
               </p>
             )}
             {formState === "error" && (
-              <p className="text-sm text-red-600">{errorMessage}</p>
+              <p className="text-sm font-medium text-rose-400">{errorMessage}</p>
             )}
             {formState === "success" && errorMessage && (
-              <p className="text-sm text-amber-600">{errorMessage}</p>
+              <p className="text-sm font-medium text-amber-400">{errorMessage}</p>
             )}
           </div>
         </form>

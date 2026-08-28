@@ -153,10 +153,10 @@ function OfferList({ items }: { items: OfferItem[] }) {
     <ul className="space-y-3">
       {items.map((item) => (
         <li key={item.label} className="flex items-start gap-3">
-          <span className="mt-0.5 flex h-8 w-8 items-center justify-center rounded-full bg-white text-primary shadow-sm">
+          <span className="mt-0.5 flex h-8 w-8 items-center justify-center rounded-full border border-blue-800/40 bg-blue-950/80 text-blue-400 shadow-sm">
             {icons[item.icon]}
           </span>
-          <span className="pt-1 text-sm font-semibold text-foreground sm:text-base">
+          <span className="pt-1 text-sm font-semibold text-slate-100 sm:text-base">
             {item.label}
           </span>
         </li>
@@ -167,26 +167,26 @@ function OfferList({ items }: { items: OfferItem[] }) {
 
 export function Offerings() {
   return (
-    <section className="overflow-hidden py-16 sm:py-20">
+    <section className="overflow-hidden bg-background py-16 sm:py-20">
       <div className="relative mx-auto max-w-6xl px-6">
         <div className="grid items-stretch gap-6 lg:grid-cols-[minmax(0,1fr)_9rem_minmax(0,1fr)] lg:gap-0">
-          <article className="offer-panel-left rounded-3xl bg-[#cfe8fb] px-8 py-10 shadow-sm">
-            <h2 className="mb-8 text-2xl font-bold text-primary">
+          <article className="offer-panel-left rounded-3xl border border-border/80 bg-navy-card px-8 py-10 shadow-xl shadow-black/40">
+            <h2 className="mb-8 text-2xl font-bold text-blue-400">
               Cybersecurity Solutions
             </h2>
             <OfferList items={cybersecurity} />
           </article>
 
           <div className="relative z-10 hidden items-center justify-center lg:flex">
-            <div className="flex h-36 w-36 shrink-0 items-center justify-center rounded-full bg-primary text-center text-lg font-bold leading-tight text-white shadow-lg ring-8 ring-white">
+            <div className="flex h-36 w-36 shrink-0 items-center justify-center rounded-full bg-blue-600 text-center text-lg font-bold leading-tight text-white shadow-xl shadow-blue-600/30 ring-8 ring-background">
               What We
               <br />
               offer
             </div>
           </div>
 
-          <article className="offer-panel-right flex flex-col justify-center rounded-3xl bg-[#f3e6e4] px-8 py-10 shadow-sm">
-            <h2 className="mb-8 text-center text-2xl font-bold text-primary lg:text-left">
+          <article className="offer-panel-right flex flex-col justify-center rounded-3xl border border-border/80 bg-navy-card px-8 py-10 shadow-xl shadow-black/40">
+            <h2 className="mb-8 text-center text-2xl font-bold text-blue-400 lg:text-left">
               IT & Digital Solutions
             </h2>
             <div className="lg:ml-6">
@@ -196,7 +196,7 @@ export function Offerings() {
         </div>
 
         <div className="mt-8 flex justify-center lg:hidden">
-          <div className="flex h-28 w-28 items-center justify-center rounded-full bg-primary text-center text-base font-bold leading-tight text-white shadow-lg">
+          <div className="flex h-28 w-28 items-center justify-center rounded-full bg-blue-600 text-center text-base font-bold leading-tight text-white shadow-xl shadow-blue-600/30">
             What We
             <br />
             offer
