@@ -1,10 +1,12 @@
 export const siteConfig = {
   name: "Sparkbyte Technologies",
   legalName: "Sparkbyte Technologies Pvt.ltd",
+  cin: "U62020KA2026PTC221572",
+  gstin: "29ABTCS8828H1ZD",
   tagline:
-    "We are Sparkbyte Technologies. Globally trusted System Integrator and Reseller.",
+    "We are Sparkbyte Technologies. Globally Trusted System Integrator and Reseller.",
   description:
-    "Authorised Reseller and System Integrator helping businesses secure, protect, and manage IT infrastructure through leading software, hardware, and cloud solutions.",
+    "Authorised Reseller and System Integrator helping businesses secure, protect, and manage IT infrastructure through leading Software, Hardware, AI and Cloud solutions.",
   contact: {
     email: "info@sparkbyte-tech.com",
     phones: ["+91 63631 17882", "+91 91879 13773"],
@@ -39,22 +41,22 @@ export const siteConfig = {
   ],
   leaders: [
     {
-      slug: "Shaik",
-      name: "Shaik",
-      title: "CEO and MD",
+      slug: "Mr.Shaik",
+      name: "Mr.Shaik",
+      title: "Co-founder and CEO",
       experience: "15+ yrs exp",
     },
     {
-      slug: "Sagar",
-      name: "Sagar",
+      slug: "Mr.Sagar",
+      name: "Mr.Sagar",
       title: "Sales Director",
       experience: "15+yrs exp",
     },
     {
-      slug: "Sophia",
-      name: "Sophia",
-      title: "Business Development Manager",
-      experience: "Experience in Business Development",
+      slug: "Ms.Sophia",
+      name: "Ms.Sophia",
+      title: "Co-founder and HR",
+      experience: "15+ yrs experience in talent aquisition",
     },
   ],
 } as const;

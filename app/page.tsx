@@ -17,9 +17,9 @@ export default function Home() {
         <WhatWeDo />
         <Leaders />
         <OEMs />
+        <Distributors />
         <ContactUs />
         <EnquiryForm />
-        <Distributors />
       </main>
       <Footer />
     </>

@@ -1,23 +1,8 @@
 # Enquiry Form Setup Guide
 
-The "For More Enquiry" form sends submissions through two channels:
-
-1. **Resend** — email notification to your team inbox
-2. **Microsoft Graph** — appends a row to an Excel table in SharePoint
+The "For More Enquiry" form appends submitted rows directly to an Excel table in SharePoint via **Microsoft Graph API**.
 
 Copy `.env.example` to `.env.local` and fill in the values below.
-
----
-
-## Resend Setup
-
-1. Create an account at [resend.com](https://resend.com).
-2. Add and verify your sending domain under **Domains**.
-3. Create an API key under **API Keys**.
-4. Set in `.env.local`:
-   - `RESEND_API_KEY` — your API key
-   - `RESEND_FROM_EMAIL` — verified sender, e.g. `notifications@yourdomain.com`
-   - `ENQUIRY_NOTIFICATION_EMAIL` — team inbox that receives enquiries
 
 ---
 
@@ -80,9 +65,7 @@ Set in `.env.local`:
 1. Copy `.env.example` to `.env.local` and fill in all values.
 2. Run `npm run dev`.
 3. Submit the form at `http://localhost:3000/#enquiry`.
-4. Check your team inbox and the SharePoint Excel file for the new row.
-
-If one integration fails but the other succeeds, the form still returns success with a warning message.
+4. Check the SharePoint Excel file for the new row.
 
 ---
 

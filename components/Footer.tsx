@@ -40,6 +40,12 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 md:grid-cols-2">
         <div>
           <p className="text-lg font-semibold text-white">{siteConfig.legalName}</p>
+          {siteConfig.cin && (
+            <p className="mt-1 text-xs text-slate-300">CIN No : {siteConfig.cin}</p>
+          )}
+          {siteConfig.gstin && (
+            <p className="mt-0.5 text-xs text-slate-300">GSTIN : {siteConfig.gstin}</p>
+          )}
           <div className="mt-4 flex gap-3">
             <SocialIcon label="Facebook" href={siteConfig.social.facebook} />
             <SocialIcon label="LinkedIn" href={siteConfig.social.linkedin} />

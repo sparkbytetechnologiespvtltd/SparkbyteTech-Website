@@ -5,7 +5,13 @@ import {
   type TokenCredentialAuthenticationProviderOptions,
 } from "@microsoft/microsoft-graph-client/authProviders/azureTokenCredentials/index.js";
 
-import type { EnquiryPayload } from "./resend";
+export type EnquiryPayload = {
+  name: string;
+  email: string;
+  phone: string;
+  company: string;
+  requirements: string;
+};
 
 function getGraphClient() {
   const tenantId = process.env.AZURE_TENANT_ID;

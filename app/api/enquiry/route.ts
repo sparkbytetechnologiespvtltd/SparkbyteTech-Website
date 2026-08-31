@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 
 import { appendEnquiryToExcel } from "@/lib/graph-excel";
-import { sendEnquiryNotification } from "@/lib/resend";
 
 const enquirySchema = z.object({
   name: z.string().min(1, "Name is required").max(100),
@@ -25,45 +24,16 @@ export async function POST(request: Request) {
     }
 
     const payload = parsed.data;
-    const warnings: string[] = [];
-
-    const [emailResult, excelResult] = await Promise.allSettled([
-      sendEnquiryNotification(payload),
-      appendEnquiryToExcel(payload),
-    ]);
-
-    if (emailResult.status === "rejected") {
-      warnings.push(
-        `Email notification failed: ${emailResult.reason instanceof Error ? emailResult.reason.message : "Unknown error"}`,
-      );
-    }
-
-    if (excelResult.status === "rejected") {
-      warnings.push(
-        `Excel logging failed: ${excelResult.reason instanceof Error ? excelResult.reason.message : "Unknown error"}`,
-      );
-    }
-
-    if (
-      emailResult.status === "rejected" &&
-      excelResult.status === "rejected"
-    ) {
-      return NextResponse.json(
-        {
-          error:
-            "Unable to process your enquiry at this time. Please try again later or contact us directly.",
-        },
-        { status: 500 },
-      );
-    }
+    await appendEnquiryToExcel(payload);
 
     return NextResponse.json({
       message: "Enquiry submitted successfully",
-      warnings: warnings.length > 0 ? warnings : undefined,
     });
-  } catch {
+  } catch (error) {
+    const errorMessage =
+      error instanceof Error ? error.message : "An unexpected error occurred";
     return NextResponse.json(
-      { error: "An unexpected error occurred" },
+      { error: `Unable to save enquiry: ${errorMessage}` },
       { status: 500 },
     );
   }
