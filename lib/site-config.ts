@@ -51,8 +51,8 @@ export const siteConfig = {
       experience: "15+ yrs exp",
     },
     {
-      slug: "Mr. Sagar",
-      name: "Mr. Sagar",
+      slug: "Mr. K.S.Sagar",
+      name: "Mr. K.S.Sagar",
       title: "Sales Director",
       experience: "15+yrs exp",
     },
