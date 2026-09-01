@@ -24,6 +24,7 @@ export function OEMs() {
                   width={140}
                   height={60}
                   className="max-h-14 w-auto object-contain"
+                  style={{ width: "auto", height: "auto" }}
                 />
               </div>
             </div>

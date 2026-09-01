@@ -24,6 +24,7 @@ export function Distributors() {
                   width={200}
                   height={70}
                   className="max-h-16 w-auto object-contain"
+                  style={{ width: "auto", height: "auto" }}
                 />
               </div>
             </div>

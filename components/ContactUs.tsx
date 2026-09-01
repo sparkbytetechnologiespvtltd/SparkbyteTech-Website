@@ -1,11 +1,9 @@
 import {
-  getFormattedAddress,
   getGoogleMapsEmbedUrl,
   siteConfig,
 } from "@/lib/site-config";
 
 export function ContactUs() {
-  const address = getFormattedAddress();
 
   return (
     <section id="contact" className="bg-background py-20 border-b border-border/50">
@@ -36,7 +34,14 @@ export function ContactUs() {
               <p className="text-xs font-bold uppercase tracking-wider text-blue-400">
                 Location Address
               </p>
-              <p className="mt-2 text-lg font-medium text-slate-200">{address}</p>
+              <div className="mt-2 text-lg font-medium text-slate-200">
+                <p>{siteConfig.legalName}</p>
+                <p className="text-sm text-slate-400">CIN NO: {siteConfig.cin}</p>
+                <p className="text-sm text-slate-400">GSTIN: {siteConfig.gstin}</p>
+                <p className="mt-2 text-base">
+                  {siteConfig.contact.address.line2}, {siteConfig.contact.address.city}, {siteConfig.contact.address.state} {siteConfig.contact.address.postalCode}, {siteConfig.contact.address.country}
+                </p>
+              </div>
             </div>
             <div>
               <p className="text-xs font-bold uppercase tracking-wider text-blue-400">
