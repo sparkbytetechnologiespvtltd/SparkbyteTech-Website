@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sparkbyte Technologies",
   description:
-    "Globally trusted VAD and reseller — authorised reseller and system integrator for IT security and infrastructure solutions.",
+    "Authorised Reseller and System Integrator helping businesses secure, protect, and manage IT infrastructure through leading Software, Hardware, AI and Cloud solutions.",
   icons: {
     icon: "/logos/sparkbyte-icon.webp",
   },
