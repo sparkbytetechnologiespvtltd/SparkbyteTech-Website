@@ -36,8 +36,8 @@ export function ContactUs() {
               </p>
               <div className="mt-2 text-lg font-medium text-slate-200">
                 <p>{siteConfig.legalName}</p>
-                <p className="text-sm text-slate-400">CIN NO: {siteConfig.cin}</p>
-                <p className="text-sm text-slate-400">GSTIN: {siteConfig.gstin}</p>
+                <p className="mt-1 text-base text-slate-200">CIN NO: {siteConfig.cin}</p>
+                <p className="mt-1 text-base text-slate-200">GSTIN: {siteConfig.gstin}</p>
                 <p className="mt-2 text-base">
                   {siteConfig.contact.address.line2}, {siteConfig.contact.address.city}, {siteConfig.contact.address.state} {siteConfig.contact.address.postalCode}, {siteConfig.contact.address.country}
                 </p>

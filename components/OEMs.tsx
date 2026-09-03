@@ -17,14 +17,13 @@ export function OEMs() {
               key={logo.src}
               className="flex h-28 items-center justify-center rounded-2xl border border-border bg-navy-card p-3 shadow-lg transition-all duration-300 hover:border-blue-500/50 hover:shadow-blue-500/10"
             >
-              <div className="flex h-full w-full items-center justify-center rounded-xl bg-white/95 p-3">
+              <div className="relative flex h-full w-full items-center justify-center rounded-xl bg-white/95 p-3">
                 <Image
                   src={logo.src}
                   alt={logo.name}
-                  width={140}
-                  height={60}
-                  className="max-h-14 w-auto object-contain"
-                  style={{ width: "auto", height: "auto" }}
+                  fill
+                  sizes="160px"
+                  className="object-contain p-2"
                 />
               </div>
             </div>
