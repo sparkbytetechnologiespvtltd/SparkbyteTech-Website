@@ -12,7 +12,10 @@ export type OemLogo = {
 function formatLogoName(filename: string) {
   return filename
     .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .map((word) => {
+      if (word.toLowerCase() === "ai") return "AI";
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
     .join(" ");
 }
 
