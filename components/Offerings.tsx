@@ -169,6 +169,14 @@ export function Offerings() {
   return (
     <section className="overflow-hidden bg-background py-16 sm:py-20">
       <div className="relative mx-auto max-w-6xl px-6">
+        <div className="mb-8 flex justify-center lg:hidden">
+          <div className="flex h-28 w-28 items-center justify-center rounded-full bg-blue-600 text-center text-base font-bold leading-tight text-white shadow-xl shadow-blue-600/30">
+            What We
+            <br />
+            offer
+          </div>
+        </div>
+
         <div className="grid items-stretch gap-6 lg:grid-cols-[minmax(0,1fr)_9rem_minmax(0,1fr)] lg:gap-0">
           <article className="offer-panel-left rounded-3xl border border-border/80 bg-navy-card px-8 py-10 shadow-xl shadow-black/40">
             <h2 className="mb-8 text-2xl font-bold text-blue-400">
@@ -193,14 +201,6 @@ export function Offerings() {
               <OfferList items={itDigital} />
             </div>
           </article>
-        </div>
-
-        <div className="mt-8 flex justify-center lg:hidden">
-          <div className="flex h-28 w-28 items-center justify-center rounded-full bg-blue-600 text-center text-base font-bold leading-tight text-white shadow-xl shadow-blue-600/30">
-            What We
-            <br />
-            offer
-          </div>
         </div>
       </div>
     </section>

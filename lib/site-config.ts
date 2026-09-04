@@ -7,6 +7,27 @@ export const siteConfig = {
     "We are Sparkbyte Technologies. Globally Trusted System Integrator and Reseller.",
   description:
     "Authorised Reseller and System Integrator helping businesses secure, protect, and manage IT infrastructure through leading Software, Hardware, AI and Cloud solutions.",
+  url: "https://www.sparkbyte-tech.com",
+  geo: {
+    latitude: 12.9719,
+    longitude: 77.5963,
+  },
+  keywords: [
+    "Sparkbyte Technologies",
+    "Authorised IT Reseller",
+    "System Integrator Bengaluru",
+    "Cybersecurity Solutions India",
+    "Enterprise Data Security",
+    "Cloud Security Solutions",
+    "Data Loss Prevention DLP",
+    "Identity Access Management IAM",
+    "PIM PAM Solutions",
+    "Hardware Security Modules HSM",
+    "Network Security",
+    "Endpoint Security",
+    "IT Consulting Bengaluru",
+    "Digital Transformation",
+  ],
   whoWeAre: [
     "Sparkbyte Technologies is a trusted system integrator and authorised reseller delivering innovative IT solutions that help businesses secure, protect, and manage their infrastructure. We specialise in leading Software, Hardware, AI, and Cloud technologies, empowering organisations of all sizes with seamless connectivity, robust security, and scalable, future-ready systems.",
     "As a globally oriented technology partner based in Bengaluru, we work closely with top OEMs and distributors to bring the latest, most reliable solutions to market. From strengthening enterprise networks and safeguarding digital assets to enabling AI-driven insights and accelerating cloud transformations, our focus remains on practical results and long-term customer success.",
@@ -25,10 +46,10 @@ export const siteConfig = {
     },
   },
   social: {
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://x.com",
-    youtube: "https://youtube.com",
+    facebook: "https://www.facebook.com/profile.php?id=61594141407833",
+    linkedin: "https://www.linkedin.com/in/sparkbytetechnologies/",
+    twitter: "https://x.com/SparkbyteTech",
+    youtube: "https://www.youtube.com/@SparkbyteTechnologiesPvtLtd",
   },
   corporateLinks: [
     { label: "About Us", href: "/#about" },

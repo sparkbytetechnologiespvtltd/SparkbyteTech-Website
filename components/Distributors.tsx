@@ -20,7 +20,7 @@ export function Distributors() {
               <div className="relative flex h-full w-full items-center justify-center rounded-xl bg-white/95 p-3">
                 <Image
                   src={logo.src}
-                  alt={logo.name}
+                  alt={`${logo.name} - Authorised Distributor Partner`}
                   fill
                   sizes="200px"
                   className="object-contain p-2"

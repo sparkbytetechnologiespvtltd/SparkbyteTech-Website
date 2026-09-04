@@ -20,7 +20,7 @@ export function OEMs() {
               <div className="relative flex h-full w-full items-center justify-center rounded-xl bg-white/95 p-3">
                 <Image
                   src={logo.src}
-                  alt={logo.name}
+                  alt={`${logo.name} - Authorised OEM Technology Partner`}
                   fill
                   sizes="160px"
                   className="object-contain p-2"
