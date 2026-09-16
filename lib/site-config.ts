@@ -65,12 +65,8 @@ export const siteConfig = {
     { label: "Contact Us", href: "/#contact" },
   ],
   leaders: [
-    {
-      slug: "Mr. Shaik",
-      name: "Mr. Shaik",
-      title: "Co-founder and CEO",
-      experience: "15+ yrs exp",
-    },
+
+
     {
       slug: "Mr. K.S.Sagar",
       name: "Mr. K.S.Sagar",
@@ -82,6 +78,12 @@ export const siteConfig = {
       name: "Ms. Sophia",
       title: "Co-founder and HR",
       experience: "15+ yrs experience in talent aquisition",
+    },
+    {
+      slug: "Mr. Ranjith",
+      name: "Mr. Ranjith",
+      title: "Technical Lead",
+      experience: "15+ yrs exp",
     },
   ],
 } as const;
