@@ -38,7 +38,7 @@ export const siteConfig = {
     mapsUrl: "https://maps.app.goo.gl/3NwDFHGboJm1N5Bw9",
     address: {
       line1: "Sparkbyte Technologies Pvt. Ltd.",
-      line2: "Cabin No. 9, 4 th floor , Golden Square , Eden Park, 102, 20, Vittal Mallya Rd., Bengaluru, Karnataka 560001",
+      line2: "Cabin No. 10, 4 th floor , Golden Square , Eden Park, 102, 20, Vittal Mallya Rd., Bengaluru, Karnataka 560001",
       city: "Bengaluru",
       state: "Karnataka",
       postalCode: "560001",
